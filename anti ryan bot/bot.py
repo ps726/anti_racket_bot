@@ -2,7 +2,7 @@ from subprocess import STARTF_USESHOWWINDOW
 import hikari, lightbulb
 
 bot = lightbulb.BotApp(
-    token="OTkxNjU3NDE2NzM3NDIzNDAw.Gwmz93.qvXfXNZnBB08vQLFfbJ_DFyCBkTVFZw8jp5m4k"
+    token="Token"
     )
 
 @bot.listen()
