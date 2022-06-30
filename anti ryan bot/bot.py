@@ -3,7 +3,7 @@ import hikari, lightbulb
 
 #connects bot to discord API
 bot = lightbulb.BotApp(
-    token="OTkxNjU3NDE2NzM3NDIzNDAw.G6RL97.p6edhgoPOHeOS3bdydsUgolE0iNoldJMCxyyac"
+    token="token"
     )
 
 #prints "bot is ready" when bot was connected to all shards and is ready for use
