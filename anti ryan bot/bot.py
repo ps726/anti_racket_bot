@@ -6,7 +6,7 @@ target = ''
 
 #connects bot to discord API
 bot = lightbulb.BotApp(
-    token="OTkxNjU3NDE2NzM3NDIzNDAw.GDg88C.-MQtJN_ILPR3P9ZGujwZnE8uF2Q8-7hTnLuDm0"
+    token="target"
     )
 
 
