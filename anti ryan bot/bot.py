@@ -1,5 +1,7 @@
-from random import *
+\from random import *
 import hikari, lightbulb
+
+list = {'😳', '💀', '🤓', '😡', '🤡', '🗿', '🤮', '🐟'}
 
 #connects bot to discord API
 bot = lightbulb.BotApp(
@@ -16,6 +18,8 @@ async def on_bot_started(event: hikari.StartedEvent):
 @bot.listen()
 async def on_message(event: hikari.MessageCreateEvent):
     if str(event.author_id) == "695817237780627506":
+        for i in list:
+            await event.message.add_reaction(i)
         var = randrange(1,3)
         if var == 1:
             await event.message.respond("https://media.discordapp.net/attachments/820047473392877591/990479302963372042/rearendFDVIKFDOFOF.gif")
