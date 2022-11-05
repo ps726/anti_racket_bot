@@ -1,4 +1,4 @@
-\from random import *
+from random import *
 import hikari, lightbulb
 
 list = {'😳', '💀', '🤓', '😡', '🤡', '🗿', '🤮', '🐟'}
