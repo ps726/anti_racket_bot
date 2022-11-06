@@ -19,8 +19,9 @@ async def on_bot_started(event: hikari.StartedEvent):
     
 #listens for messages being sent
 @bot.listen()
-#checks if 
 async def on_message(event: hikari.MessageCreateEvent):
+    print(event.content)
+    
     if str(event.author_id) == target:
         #adds reactions to message 
         for i in list:
@@ -37,16 +38,19 @@ async def on_message(event: hikari.MessageCreateEvent):
         elif var == 2:
             await event.message.respond(f'"{event.content}" - :nerd:')
             print(event.content)
-        
-        #use to change who the bot targets 
-        elif event.content.startswith('?add target') == True:
-        user = (str(event.content))
-        i = len(user)
-        user = user[14:i].strip('>')
-        global target
-        target = user
-        print(f"{user} has been made the target" )
 
-bot.run(
-    
-)
+@bot.listen()
+async def on_message(event: hikari.MessageCreateEvent):
+    print(event.content)
+    try:
+        if event.content.startswith('?add target') == True:
+            user = (str(event.content))
+            i = len(user)
+            user = user[14:i].strip('>')
+            global target
+            target = user
+            print(f"{user} has been made the target" )
+    except:
+        print('error')
+
+bot.run()
