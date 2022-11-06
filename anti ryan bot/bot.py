@@ -30,7 +30,7 @@ async def on_message(event: hikari.MessageCreateEvent):
         
         #sends a message telling person to shut up
         if var == 1:
-            await event.message.respond("https://media.discordapp.net/attachments/820047473392877591/990479302963372042/rearendFDVIKFDOFOF.gif")
+            await event.message.respond("https://cdn.discordapp.com/attachments/994877167638941756/1038724207833526314/unknown.png")
             print(event.content)
        
         #repeats message followed by nerd emoji
